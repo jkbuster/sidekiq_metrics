@@ -2,6 +2,10 @@ FROM ruby:alpine
 
 ENV PORT 9292
 
+COPY ./ /app
+
+WORKDIR /app
+
 RUN gem install bundler \
   && bundle install
 
