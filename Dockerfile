@@ -9,4 +9,4 @@ WORKDIR /app
 RUN gem install bundler \
   && bundle install
 
-CMD ["bundle", "exec", "rackup", "-p${PORT}", "-o0,0,0,0"]
+CMD ["bundle", "exec", "rackup", "-p${PORT}", "-o0.0.0.0"]
